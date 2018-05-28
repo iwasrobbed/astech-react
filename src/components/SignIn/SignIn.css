@@ -1,0 +1,32 @@
+.AstechLogo {
+    display: block;
+    margin: 3rem auto;
+    width: 165px;
+}
+
+.SignInContainer {
+    margin: auto;
+    width: 30rem;
+}
+
+.SignInContainer h2 {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.SignInContainer Button {
+    width: 100%;
+}
+
+.SignInContainer #forgotPassword {
+    margin-bottom: 1rem;
+    text-align: right;
+}
+
+.SignInContainer Button#SignIn, .SignInContainer.CreateAccount Button {
+    margin-bottom: 1.5rem;
+}
+
+.SignInContainer.CreateAccount Button {
+    margin-top: 1rem;
+}
