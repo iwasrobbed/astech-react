@@ -1,0 +1,26 @@
+.AstechLogo {
+    display: block;
+    margin: 3rem auto;
+    width: 165px;
+}
+
+.CreateAccountContainer {
+    margin: auto;
+    width: 30rem;
+}
+
+.CreateAccountContainer a {
+    text-decoration: none;
+}
+
+.CreateAccountContainer h2 {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.CreateAccountContainer Button {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    text-decoration: none;
+}

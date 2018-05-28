@@ -1,24 +1,25 @@
 import React, {Component} from 'react';
-import { Link as RouterLink } from 'react-router-dom';
 import {
   AppProvider,
   Layout,
   Page,
   Card,
-  Link as TextLink,
   Heading,
   Button,
   FormLayout,
   TextField
 } from '@shopify/polaris';
-import './SignIn.css';
+import AccountTypeSelector from './AccountTypeSelector.js';
+import './CreateAccount.css';
 
-class SignIn extends Component {
+class CreateAccount extends Component {
   constructor(props) {
     super(props);
     this.state = {
       email: '',
-      password: ''
+      password: '',
+      passwordConfirmation: '',
+      accountType: ''
     };
   }
 
@@ -30,8 +31,8 @@ class SignIn extends Component {
                     <Layout.Section>
                         <img src={require("./../../assets/astechBlackOrangeLogo@2x.png")} alt="astech" className="AstechLogo"></img>
                         <Card sectioned>
-                            <div className="SignInContainer">
-                                <Heading>Sign in</Heading>
+                            <div className="CreateAccountContainer">
+                                <Heading>Create an account</Heading>
                                 <FormLayout>
                                   <TextField
                                     value={this.state.email}
@@ -46,19 +47,16 @@ class SignIn extends Component {
                                     placeholder="********"
                                     onChange={this.valueUpdater('password')}
                                   />
-                                  <TextLink id="forgotPassword" onClick={this.renderForgotPassword()}>Forgot password?</TextLink>
-                                  <Button id="SignIn" primary>Sign in</Button>
+                                  <TextField
+                                    value={this.state.passwordConfirmation}
+                                    label="Confirm Password"
+                                    type="password"
+                                    placeholder="********"
+                                    onChange={this.valueUpdater('passwordConfirmation')}
+                                  />
+                                  <AccountTypeSelector/>
+                                  <Button primary>Create</Button>
                               </FormLayout>
-                            </div>
-                        </Card>
-                    </Layout.Section>
-                    <Layout.Section>
-                        <Card sectioned>
-                            <div className="SignInContainer CreateAccount">
-                                <Heading>Don't have an account?</Heading>
-                                <RouterLink to="/account/create">
-                                    <Button secondary>Create an account</Button>
-                                </RouterLink>
                             </div>
                         </Card>
                     </Layout.Section>
@@ -71,10 +69,6 @@ class SignIn extends Component {
   valueUpdater(field) {
       return (value) => this.setState({[field]: value});
   }
-
-  renderForgotPassword() {
-      return;
-  }
 }
 
-export default SignIn;
+export default CreateAccount;

@@ -9,6 +9,10 @@
     width: 30rem;
 }
 
+.SignInContainer a {
+    text-decoration: none;
+}
+
 .SignInContainer h2 {
     text-align: center;
     padding-bottom: 1rem;
