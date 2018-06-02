@@ -1,0 +1,116 @@
+.NavigationBar {
+    background: #4B4D54;
+    height: 5.6rem;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-bottom: 3rem;
+}
+
+.NavigationBar .AstechNavLogo {
+    position: relative;
+    width: 12rem;
+    height: 100%;
+    margin: auto 10rem;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 1000px) {
+    .NavigationBar .AstechNavLogo {
+        margin: auto 5rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .NavigationBar .AstechNavLogo {
+        width: 6rem;
+        margin: auto 1rem;
+    }
+}
+
+.NavigationBar .AstechNavLogo img {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.NavigationBar .SearchContainer {
+    position: fixed;
+    top: 1rem;
+    display: inline-block;
+    width: 50vw;
+}
+
+.NavigationBar .NavigationSearch {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    text-transform: initial;
+    letter-spacing: initial;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 1.2rem;
+    cursor: text;
+}
+
+.NavigationBar .NavigationSearch input {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    text-transform: initial;
+    letter-spacing: initial;
+    position: relative;
+    z-index: 20;
+    display: block;
+    -ms-flex: 1 1 0%;
+    flex: 1 1;
+    width: 100%;
+    min-width: 0;
+    min-height: 3.6rem;
+    margin: 0 0 0 2rem;
+    padding: 0.5rem 0;
+    background: none;
+    border: 1px solid transparent;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.NavigationBar .NavigationSearch input:focus {
+    outline-width: 0;
+}
+
+.NavigationBar .NavigationSearch .Backdrop {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #36373C;
+    border: 1px solid #000;
+    border-radius: 3px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.NavigationBar .NavigationSearch .Backdrop .Polaris-Icon {
+    position: absolute;
+    left: 0.5rem;
+    top: 0.7rem;
+}

@@ -7,6 +7,7 @@ import {
 // Routes
 import SignIn from './components/SignIn';
 import CreateAccount from './components/CreateAccount';
+import Expositions from './components/Expositions';
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
                   <div>
                       <Route exact path="/" component={SignIn} />
                       <Route exact path="/account/create" component={CreateAccount} />
+                      <Route exact path="/expositions" component={Expositions} />
                   </div>
               </BrowserRouter>
           </div>

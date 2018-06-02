@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 import {
   AppProvider,
   Layout,
@@ -29,7 +30,7 @@ class CreateAccount extends Component {
             <Page>
                 <Layout>
                     <Layout.Section>
-                        <img src={require("./../../assets/astechBlackOrangeLogo@2x.png")} alt="astech" className="AstechLogo"></img>
+                        <img src={require("./../../assets/astechBlackOrangeLogo@2x.png")} alt="astech" className="AstechLoggedOutLogo"></img>
                         <Card sectioned>
                             <div className="CreateAccountContainer">
                                 <Heading>Create an account</Heading>
@@ -55,7 +56,9 @@ class CreateAccount extends Component {
                                     onChange={this.valueUpdater('passwordConfirmation')}
                                   />
                                   <AccountTypeSelector/>
-                                  <Button primary>Create</Button>
+                                  <RouterLink to="/expositions">
+                                      <Button primary>Create</Button>
+                                  </RouterLink>
                               </FormLayout>
                             </div>
                         </Card>

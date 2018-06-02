@@ -1,0 +1,57 @@
+.LayoutBelowNavigationBar {
+    margin-top: 8rem;
+}
+
+.ExpositionsHeaderCard p {
+    display: inline-block;
+}
+
+.ExpositionsHeaderCard button {
+    position: relative;
+    float: right;
+}
+
+@media only screen and (max-width: 750px) {
+    .ExpositionsHeaderCard button {
+        top: -0.1rem;
+    }
+}
+
+.ExpositionList table {
+    margin-left: 0;
+    width: 100%;
+}
+
+.ExpositionList th {
+    padding: 1rem;
+    font-weight: 600;
+}
+
+.ExpositionList th, .ExpositionList td {
+    text-align: center;
+}
+
+.ExpositionList th:first-child {
+    text-align: left;
+    width: 20vw;
+}
+
+@media only screen and (max-width: 750px) {
+    .ExpositionList th:first-child {
+        min-width: 50vw;
+    }
+}
+
+.ExpositionList .ExpositionIconSmall {
+    width: 6rem;
+    height: 6rem;
+    display: inline-block;
+    border: 1px solid rgba(67, 67, 68, 0.6);
+}
+
+.ExpositionList .ExpositionIconTableItem span {
+    margin-left: 1rem;
+    display: inline-block;
+    line-height: 6rem;
+    position: absolute;
+}

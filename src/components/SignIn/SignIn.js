@@ -28,7 +28,7 @@ class SignIn extends Component {
             <Page>
                 <Layout>
                     <Layout.Section>
-                        <img src={require("./../../assets/astechBlackOrangeLogo@2x.png")} alt="astech" className="AstechLogo"></img>
+                        <img src={require("./../../assets/astechBlackOrangeLogo@2x.png")} alt="astech" className="AstechLoggedOutLogo"></img>
                         <Card sectioned>
                             <div className="SignInContainer">
                                 <Heading>Sign in</Heading>
